@@ -1,94 +1,268 @@
-# SmartRetail — Multi-Store Retail SaaS
+# 🛒 Smart Retail System (Multi-Tenant SaaS)
 
-A production-grade multi-store retail management SaaS platform built with **Spring Boot** and **React**.
+<p align="center">
 
-## Tech Stack
+![Java](https://img.shields.io/badge/Java-21-orange?style=for-the-badge&logo=openjdk)
+![Spring Boot](https://img.shields.io/badge/Spring_Boot-3.x-brightgreen?style=for-the-badge&logo=springboot)
+![Spring Security](https://img.shields.io/badge/Spring_Security-JWT-success?style=for-the-badge)
+![MySQL](https://img.shields.io/badge/MySQL-Database-blue?style=for-the-badge&logo=mysql)
+![Hibernate](https://img.shields.io/badge/Hibernate-JPA-brown?style=for-the-badge)
+![React](https://img.shields.io/badge/React-Frontend-61DAFB?style=for-the-badge&logo=react)
+![Maven](https://img.shields.io/badge/Maven-Build-red?style=for-the-badge&logo=apachemaven)
 
-| Layer     | Technology                            |
-|-----------|---------------------------------------|
-| Frontend  | React 18, Tailwind CSS v4, Axios      |
-| Backend   | Java 17, Spring Boot 3.2, Spring Security, JPA |
-| Database  | MySQL 8+                              |
-| Auth      | JWT (stateless)                       |
-| Email     | Spring Boot Mail (SMTP)               |
+</p>
 
-## Prerequisites
+> **A modern Multi-Tenant Retail Management System built using Java, Spring Boot, Spring Security (JWT), React, and MySQL.**
+>
+> Each store has its own secure workspace to manage inventory, customers, billing, offers, analytics, and transactions independently.
 
-- **Java 17+** (JDK)
-- **Maven 3.8+**
-- **Node.js 18+** & **npm**
-- **MySQL 8+** running locally
+---
 
-## Setup Instructions
+# ✨ Features
 
-### 1. Database
+- 🔐 JWT Authentication & Authorization
+- 🏪 Multi-Tenant SaaS Architecture
+- 📊 Interactive Analytics Dashboard
+- 📈 Sales Trend Analytics
+- 💰 Revenue Tracking
+- 📦 Product & Inventory Management
+- 🗂️ Category Management
+- 👥 Customer Management
+- 🧾 Smart Billing System
+- 📜 Billing History & Transactions
+- 🧮 Automatic GST Calculation
+- 🎁 Offer & Promotion Management
+- 📧 Email Invoice Delivery
+- 🖨️ Printable Invoice with QR Code
+- 📱 Modern Responsive UI
+- 🔍 Advanced Search & Filtering
+- 🔒 Secure REST APIs
 
-```bash
-mysql -u root -p < schema.sql
+---
+
+# 🛠️ Tech Stack
+
+| Category | Technology |
+|-----------|------------|
+| Backend | Java, Spring Boot |
+| Security | Spring Security, JWT |
+| Database | MySQL |
+| ORM | Spring Data JPA (Hibernate) |
+| Frontend | React.js |
+| Build Tool | Maven |
+| API Testing | Postman |
+| Version Control | Git & GitHub |
+
+---
+
+# 📂 Project Structure
+
+```
+SmartRetail-v2
+│
+├── backend
+│   ├── controller
+│   ├── service
+│   ├── repository
+│   ├── entity
+│   ├── dto
+│   ├── security
+│   ├── config
+│   ├── exception
+│   └── resources
+│
+├── frontend
+│
+└── README.md
 ```
 
-### 2. Backend Configuration
+---
 
-Edit `backend/src/main/resources/application.yml`:
+# 🔗 API Endpoints
 
-```yaml
-spring:
-  datasource:
-    url: jdbc:mysql://localhost:3306/smart_retail_db
-    username: root        # ← your MySQL username
-    password: root        # ← your MySQL password
+| Module | Method | Endpoint | Authentication |
+|--------|--------|----------|----------------|
+| Register | POST | `/api/v1/auth/register` | ❌ No |
+| Login | POST | `/api/v1/auth/login` | ❌ No |
+| Dashboard | GET | `/api/v1/store/dashboard` | ✅ JWT |
+| Store | GET, PUT | `/api/v1/store` | ✅ JWT |
+| Categories | CRUD | `/api/v1/categories` | ✅ JWT |
+| Products | CRUD | `/api/v1/products` | ✅ JWT |
+| Customers | CRUD | `/api/v1/customers` | ✅ JWT |
+| Bills | GET, POST | `/api/v1/bills` | ✅ JWT |
+| Offers | CRUD | `/api/v1/offers` | ✅ JWT |
 
-  mail:
-    username: your-email@gmail.com   # ← your Gmail
-    password: your-app-password       # ← Gmail App Password
-```
+---
 
-### 3. Start Backend
+# 📸 Project Screenshots
+
+## 🔐 Login
+
+Secure login using JWT Authentication.
+
+![Login](screenshots/login.png)
+
+---
+
+## 📊 Analytics Dashboard
+
+Real-time dashboard displaying revenue, customers, products, sales trends, top-selling products, and low-stock alerts.
+
+![Dashboard](screenshots/dashboard.png)
+
+---
+
+## 📦 Product Management
+
+Manage inventory, pricing, stock levels, and product details.
+
+![Products](screenshots/products.png)
+
+---
+
+## 🗂️ Category Management
+
+Organize products into categories with search and CRUD operations.
+
+![Categories](screenshots/category.png)
+
+---
+
+## 👥 Customer Management
+
+Manage customer records with search functionality.
+
+![Customers](screenshots/customer.png)
+
+---
+
+## 🧾 Smart Billing
+
+Generate invoices with GST calculation, discounts, customer selection, and automatic stock updates.
+
+![Billing](screenshots/billing.png)
+
+---
+
+## 📜 Transaction History
+
+View invoice history, revenue summary, monthly filtering, and transaction search.
+
+![Transactions](screenshots/transaction.png)
+
+---
+
+## 🧾 Printable Invoice
+
+Professional GST invoice with QR Code and print support.
+
+![Invoice](screenshots/invoice.png)
+
+---
+
+## 🎁 Offers & Promotions
+
+Create and manage promotional offers with discount percentages and expiry dates.
+
+![Offers](screenshots/offer.png)
+
+---
+
+# 🚀 Getting Started
+
+## Clone Repository
 
 ```bash
-cd backend
+git clone https://github.com/Ompatil-999/SmartRetail-v2.git
+```
+
+---
+
+## Navigate
+
+```bash
+cd SmartRetail-v2
+```
+
+---
+
+## Configure Database
+
+Create your own
+
+```
+application.yml
+```
+
+Configure
+
+- MySQL URL
+- Username
+- Password
+- JWT Secret
+- Mail Configuration
+
+> **Note:** `application.yml` is intentionally excluded from GitHub for security reasons.
+
+---
+
+## Run Backend
+
+```bash
 mvn spring-boot:run
 ```
 
-Backend runs on `http://localhost:8080`.
+---
 
-### 4. Start Frontend
+## Run Frontend
 
 ```bash
-cd frontend
 npm install
 npm run dev
 ```
 
-Frontend runs on `http://localhost:5173`.
+---
 
-### 5. Use the App
+# 🔒 Security
 
-1. Open `http://localhost:5173/register`
-2. Register a new store owner
-3. You'll be redirected to the dashboard
-4. Start managing categories, products, customers, billing, and offers
+- JWT Authentication
+- BCrypt Password Encryption
+- Stateless Authentication
+- Protected REST APIs
+- Secure Password Storage
 
-## API Endpoints
+---
 
-| Module     | Method | Endpoint                    | Auth |
-|------------|--------|-----------------------------|------|
-| Register   | POST   | `/api/v1/auth/register`     | ✗    |
-| Login      | POST   | `/api/v1/auth/login`        | ✗    |
-| Dashboard  | GET    | `/api/v1/store/dashboard`   | ✓    |
-| Store      | GET/PUT| `/api/v1/store`             | ✓    |
-| Categories | CRUD   | `/api/v1/categories`        | ✓    |
-| Products   | CRUD   | `/api/v1/products`          | ✓    |
-| Customers  | CRUD   | `/api/v1/customers`         | ✓    |
-| Bills      | GET/POST| `/api/v1/bills`            | ✓    |
-| Offers     | CRUD   | `/api/v1/offers`            | ✓    |
+# 🚀 Future Enhancements
 
-## Architecture
+- 📊 Sales Reports & Charts
+- ☁️ AWS Deployment
+- 🐳 Docker Support
+- 📱 Mobile Application
+- 🔔 Low Stock Notifications
+- 📈 Business Intelligence Dashboard
+- 📄 PDF & Excel Reports
+- 💳 Online Payment Integration
 
-```
-Controller → Service → Repository → Entity
-     ↑           ↑          ↑
-    DTO       Mapper     JPA/MySQL
-```
+---
 
-Every business table includes `store_id` for multi-tenant isolation.
+# 👨‍💻 Author
+
+## Om Patil
+
+**MCA Student | Java Backend Developer**
+
+- Java
+- Spring Boot
+- Spring Security
+- REST APIs
+- MySQL
+- Hibernate
+- React
+- Cloud & DevOps (Learning)
+
+---
+
+## ⭐ Support
+
+If you found this project helpful, please consider giving it a ⭐ on GitHub.
