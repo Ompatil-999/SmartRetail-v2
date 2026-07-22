@@ -1,0 +1,371 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Synopsis — Smart Retail</title>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap');
+
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'Inter', 'Segoe UI', Arial, sans-serif;
+            color: #1e293b;
+            line-height: 1.7;
+            padding: 50px 70px;
+            font-size: 13px;
+        }
+
+        h1 {
+            font-size: 26px;
+            font-weight: 800;
+            text-align: center;
+            color: #1e40af;
+            margin-bottom: 4px;
+        }
+
+        h2 {
+            font-size: 15px;
+            font-weight: 700;
+            color: #1e40af;
+            margin-top: 30px;
+            margin-bottom: 8px;
+            border-bottom: 2px solid #dbeafe;
+            padding-bottom: 4px;
+        }
+
+        h3 {
+            font-size: 13px;
+            font-weight: 600;
+            color: #334155;
+            margin-top: 14px;
+            margin-bottom: 4px;
+        }
+
+        p,
+        li {
+            font-size: 13px;
+            color: #334155;
+            margin-bottom: 4px;
+        }
+
+        ul {
+            padding-left: 22px;
+        }
+
+        li {
+            margin-bottom: 3px;
+        }
+
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            margin: 8px 0 14px;
+            font-size: 12px;
+        }
+
+        th {
+            background: #1e40af;
+            color: white;
+            padding: 8px 12px;
+            text-align: left;
+            font-weight: 600;
+            font-size: 11px;
+            text-transform: uppercase;
+            letter-spacing: 0.5px;
+        }
+
+        td {
+            padding: 7px 12px;
+            border-bottom: 1px solid #e2e8f0;
+        }
+
+        tr:nth-child(even) td {
+            background: #f8fafc;
+        }
+
+        .subtitle {
+            text-align: center;
+            color: #64748b;
+            font-size: 14px;
+            margin-bottom: 6px;
+        }
+
+        .center {
+            text-align: center;
+        }
+
+        .divider {
+            border: none;
+            border-top: 2px solid #1e40af;
+            margin: 20px 0;
+        }
+
+        .cover-box {
+            border: 3px solid #1e40af;
+            border-radius: 12px;
+            padding: 40px;
+            text-align: center;
+            margin-bottom: 30px;
+        }
+
+        .cover-box h1 {
+            font-size: 30px;
+            margin-bottom: 8px;
+        }
+
+        .meta {
+            font-size: 12px;
+            color: #64748b;
+            margin-top: 3px;
+        }
+
+        .badge {
+            display: inline-block;
+            background: #dbeafe;
+            color: #1e40af;
+            padding: 2px 10px;
+            border-radius: 10px;
+            font-size: 11px;
+            font-weight: 600;
+        }
+
+        @media print {
+            body {
+                padding: 30px 50px;
+            }
+
+            .page-break {
+                page-break-before: always;
+            }
+        }
+    </style>
+</head>
+
+<body>
+
+    <div class="cover-box">
+        <p style="font-size:13px; color:#64748b; margin-bottom:10px;">A Project Synopsis on</p>
+        <h1>SMART RETAIL</h1>
+        <p class="subtitle" style="font-size:16px; font-weight:600;">Multi-Store Retail Management System</p>
+        <hr class="divider" style="max-width:200px; margin:16px auto;">
+        <p style="font-size:13px; color:#475569; margin-top:14px;">
+            <strong>Submitted by:</strong> [Your Name] &nbsp;|&nbsp; <strong>Roll No:</strong> [Roll Number]
+        </p>
+        <p style="font-size:13px; color:#475569;">
+            <strong>Guide:</strong> [Guide Name]
+        </p>
+        <p style="font-size:13px; color:#475569;">
+            <strong>Department:</strong> [Department Name]
+        </p>
+        <p style="font-size:13px; color:#475569;">
+            <strong>College:</strong> [College Name]
+        </p>
+        <p style="font-size:13px; color:#475569; margin-top:10px;">
+            <strong>Academic Year:</strong> 2025–26
+        </p>
+    </div>
+
+    <h2>1. Project Title</h2>
+    <p><strong>Smart Retail — A Web-Based Multi-Store Retail Management System</strong></p>
+
+    <h2>2. Domain</h2>
+    <p>Retail Management / Point of Sale (POS) / Software as a Service (SaaS)</p>
+
+    <h2>3. Problem Statement</h2>
+    <p>Small and medium retail businesses lack access to affordable, modern, and integrated management tools. Most
+        existing solutions are either too expensive, lack multi-store support, or have outdated interfaces. There is a
+        need for a unified, web-based platform that handles product inventory, customer management, billing with invoice
+        generation, and offer management — all while ensuring data isolation between stores.</p>
+
+    <h2>4. Proposed Solution</h2>
+    <p>Smart Retail is a production-grade, multi-tenant web application that allows retail store owners to register
+        their store, manage products and categories, handle billing with QR-coded invoices, track customers, and send
+        promotional offers — all from a single modern dashboard with a premium UI.</p>
+
+    <h2>5. Objectives</h2>
+    <ul>
+        <li>Develop a secure multi-store retail management platform</li>
+        <li>Implement role-based authentication using JWT</li>
+        <li>Provide POS-style billing with automated invoice generation</li>
+        <li>Generate QR codes on invoices for verification</li>
+        <li>Support product image uploads and visual catalog</li>
+        <li>Enable customer management with inline creation during billing</li>
+        <li>Send store-branded invoice emails automatically</li>
+        <li>Provide a real-time analytics dashboard</li>
+    </ul>
+
+    <h2>6. Technology Stack</h2>
+    <table>
+        <tr>
+            <th>Layer</th>
+            <th>Technology</th>
+        </tr>
+        <tr>
+            <td>Frontend</td>
+            <td>React.js, Tailwind CSS, Axios</td>
+        </tr>
+        <tr>
+            <td>Backend</td>
+            <td>Java 17, Spring Boot 3.2, Spring Security</td>
+        </tr>
+        <tr>
+            <td>Database</td>
+            <td>MySQL 8.0</td>
+        </tr>
+        <tr>
+            <td>Authentication</td>
+            <td>JWT (JSON Web Token)</td>
+        </tr>
+        <tr>
+            <td>QR Code</td>
+            <td>ZXing Library</td>
+        </tr>
+        <tr>
+            <td>Email</td>
+            <td>Spring Boot Mail (SMTP)</td>
+        </tr>
+        <tr>
+            <td>Build Tools</td>
+            <td>Maven, Vite</td>
+        </tr>
+    </table>
+
+    <h2>7. Modules (10 Main Modules)</h2>
+    <table>
+        <tr>
+            <th>#</th>
+            <th>Module</th>
+            <th>Description</th>
+        </tr>
+        <tr>
+            <td>1</td>
+            <td><strong>User Registration & Authentication</strong></td>
+            <td>Store owner registration, JWT login/logout, session management</td>
+        </tr>
+        <tr>
+            <td>2</td>
+            <td><strong>Store Management</strong></td>
+            <td>Store profile, GST details, tax rate configuration</td>
+        </tr>
+        <tr>
+            <td>3</td>
+            <td><strong>Dashboard & Analytics</strong></td>
+            <td>KPI cards showing products, customers, bills, revenue, low stock</td>
+        </tr>
+        <tr>
+            <td>4</td>
+            <td><strong>Category Management</strong></td>
+            <td>CRUD operations for product categories</td>
+        </tr>
+        <tr>
+            <td>5</td>
+            <td><strong>Product Management</strong></td>
+            <td>CRUD with barcode, stock tracking, image upload, low-stock alerts</td>
+        </tr>
+        <tr>
+            <td>6</td>
+            <td><strong>Customer Management</strong></td>
+            <td>CRUD, search by name/email/phone, duplicate prevention</td>
+        </tr>
+        <tr>
+            <td>7</td>
+            <td><strong>Billing & POS</strong></td>
+            <td>Cart system, item/bill discounts, GST calculation, stock deduction</td>
+        </tr>
+        <tr>
+            <td>8</td>
+            <td><strong>Invoice Generation & Printing</strong></td>
+            <td>QR-coded invoice, POS-style print layout, invoice history</td>
+        </tr>
+        <tr>
+            <td>9</td>
+            <td><strong>Offer Management</strong></td>
+            <td>Create promotional offers with discount and validity period</td>
+        </tr>
+        <tr>
+            <td>10</td>
+            <td><strong>Email Notifications</strong></td>
+            <td>Async invoice emails, offer broadcast to all customers</td>
+        </tr>
+    </table>
+
+    <h2>8. Hardware & Software Requirements</h2>
+    <h3>Hardware Requirements</h3>
+    <table>
+        <tr>
+            <th>Component</th>
+            <th>Minimum Requirement</th>
+        </tr>
+        <tr>
+            <td>Processor</td>
+            <td>Intel Core i3 or above</td>
+        </tr>
+        <tr>
+            <td>RAM</td>
+            <td>4 GB minimum</td>
+        </tr>
+        <tr>
+            <td>Storage</td>
+            <td>10 GB free disk space</td>
+        </tr>
+        <tr>
+            <td>Network</td>
+            <td>Active internet connection</td>
+        </tr>
+    </table>
+    <h3>Software Requirements</h3>
+    <table>
+        <tr>
+            <th>Software</th>
+            <th>Version</th>
+        </tr>
+        <tr>
+            <td>Operating System</td>
+            <td>Windows 10/11 or Linux</td>
+        </tr>
+        <tr>
+            <td>JDK</td>
+            <td>17 or above</td>
+        </tr>
+        <tr>
+            <td>Node.js</td>
+            <td>18 or above</td>
+        </tr>
+        <tr>
+            <td>MySQL</td>
+            <td>8.0</td>
+        </tr>
+        <tr>
+            <td>Web Browser</td>
+            <td>Chrome / Edge / Firefox</td>
+        </tr>
+    </table>
+
+    <h2>9. Expected Outcomes</h2>
+    <ul>
+        <li>Fully functional multi-store retail management system</li>
+        <li>Secure authentication with complete data isolation between stores</li>
+        <li>Professional invoice generation with QR codes for verification</li>
+        <li>Real-time dashboard providing actionable business insights</li>
+        <li>Automated email notifications for invoices and offers</li>
+    </ul>
+
+    <h2>10. Future Scope</h2>
+    <ul>
+        <li>Mobile application using React Native</li>
+        <li>Barcode scanner integration via camera</li>
+        <li>Multi-language and multi-currency support</li>
+        <li>Payment gateway integration (Razorpay, Stripe)</li>
+        <li>Advanced reporting with charts and PDF/Excel export</li>
+        <li>Role-based access for store staff</li>
+    </ul>
+
+</body>
+
+</html>
