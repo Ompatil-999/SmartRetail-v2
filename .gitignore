@@ -3,5 +3,5 @@
 .vscode/
 target/
 .env
-backend/smart-retail-backend/src/main/resources/application.yml
+backend\src\main\resources\application.yml
 
