@@ -116,7 +116,7 @@ Real-time dashboard displaying revenue, customers, products, sales trends, top-s
 
 Manage inventory, pricing, stock levels, and product details.
 
-![Products](Screenshots/Products.png)
+![Products](Screenshots/products.png)
 
 ---
 
@@ -132,7 +132,7 @@ Organize products into categories with search and CRUD operations.
 
 Manage customer records with search functionality.
 
-![Customers](Screenshots/Customer.png)
+![Customers](Screenshots/customer.png)
 
 ---
 
