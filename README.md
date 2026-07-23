@@ -116,7 +116,7 @@ Real-time dashboard displaying revenue, customers, products, sales trends, top-s
 
 Manage inventory, pricing, stock levels, and product details.
 
-![Products](Screenshots/products.png)
+![Products](Screenshots/product.png)
 
 ---
 
