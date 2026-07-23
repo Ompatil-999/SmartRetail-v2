@@ -3,5 +3,28 @@
 .vscode/
 target/
 .env
-backend\src\main\resources\application.yml
+backend/src/main/resources/application.yml
 
+# Maven wrapper (generated locally)
+backend/maven-wrapper.jar
+backend/.mvn/
+
+# Runtime uploads folder
+backend/uploads/
+backend/uploads/**/*
+
+# Build artifacts
+*.class
+*.jar
+*.war
+*.ear
+*.zip
+
+# OS files
+.DS_Store
+Thumbs.db
+
+# IDE
+*.swp
+*.swo
+*~
