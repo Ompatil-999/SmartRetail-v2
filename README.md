@@ -108,7 +108,7 @@ Secure login using JWT Authentication.
 
 Real-time dashboard displaying revenue, customers, products, sales trends, top-selling products, and low-stock alerts.
 
-![Dashboard](Screenshots/dashboard.png)
+![Dashboard](Screenshots/Dashboard.png)
 
 ---
 
@@ -116,7 +116,7 @@ Real-time dashboard displaying revenue, customers, products, sales trends, top-s
 
 Manage inventory, pricing, stock levels, and product details.
 
-![Products](Screenshots/products.png)
+![Products](Screenshots/Products.png)
 
 ---
 
@@ -124,7 +124,7 @@ Manage inventory, pricing, stock levels, and product details.
 
 Organize products into categories with search and CRUD operations.
 
-![Categories](Screenshots/category.png)
+![Categories](Screenshots/Category.png)
 
 ---
 
@@ -132,7 +132,7 @@ Organize products into categories with search and CRUD operations.
 
 Manage customer records with search functionality.
 
-![Customers](Screenshots/customer.png)
+![Customers](Screenshots/Customer.png)
 
 ---
 
@@ -140,7 +140,7 @@ Manage customer records with search functionality.
 
 Generate invoices with GST calculation, discounts, customer selection, and automatic stock updates.
 
-![Billing](Screenshots/billing.png)
+![Billing](Screenshots/Billing.png)
 
 ---
 
@@ -148,7 +148,7 @@ Generate invoices with GST calculation, discounts, customer selection, and autom
 
 View invoice history, revenue summary, monthly filtering, and transaction search.
 
-![Transactions](Screenshots/transaction.png)
+![Transactions](Screenshots/Transaction.png)
 
 ---
 
@@ -164,7 +164,7 @@ Professional GST invoice with QR Code and print support.
 
 Create and manage promotional offers with discount percentages and expiry dates.
 
-![Offers](Screenshots/offer.png)
+![Offers](Screenshots/Offer.png)
 
 ---
 
